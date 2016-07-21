@@ -71,7 +71,7 @@
           .outerRadius(radius);
 
         var pie = d3.layout.pie()
-          .value(function(d) { return d.count; })
+          .value(function(d) { return d.reign; })
           .sort(null);
 
         var tooltip = d3.select('#chart')
