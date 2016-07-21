@@ -87,7 +87,7 @@
         tooltip.append('div')
           .attr('class', 'reign');
 
-        d3.csv('weekdays.csv', function(error, dataset) {
+        d3.csv('data.csv', function(error, dataset) {
           dataset.forEach(function(d) {
             d.count = +d.count;
             d.enabled = true;                                         // NEW
